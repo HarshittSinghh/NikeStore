@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nike_store/Pages/cart_page.dart';
-import 'package:nike_store/Pages/shoping_page.dart';
+import 'package:nike_store/Pages/shopping_page.dart';
+import 'dart:ui';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -34,6 +35,7 @@ class _HomePageState extends State<HomePage> {
               Scaffold.of(context).openDrawer();
             },
             icon: Icon(Icons.dashboard),
+            color: Colors.black,
           ),
         ),
         title: Center(
