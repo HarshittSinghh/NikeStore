@@ -52,15 +52,15 @@ class IntroPage extends StatelessWidget {
                   );
                 },
                 child: Container(
-                  width: double.infinity,
+                  width: 250,
                   decoration: BoxDecoration(
                     color: Colors.black,
-                    borderRadius: BorderRadius.circular(12),
+                    borderRadius: BorderRadius.circular(50),
                   ),
-                  padding: EdgeInsets.all(16),
+                  padding: EdgeInsets.all(20),
                   child: const Center(
                     child: Text(
-                      'Shop Now',
+                      'Shop Now',                      
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w600,

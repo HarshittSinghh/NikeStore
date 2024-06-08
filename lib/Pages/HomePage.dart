@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nike_store/Pages/cart_page.dart';
-import 'package:nike_store/Pages/shopping_page.dart';
+import 'package:nike_store/Pages/cloth_section.dart';
+import 'package:nike_store/Pages/sports_section.dart';
 import 'dart:ui';
 
 class HomePage extends StatefulWidget {
@@ -14,8 +14,8 @@ class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
 
   static const List<Widget> _pages = <Widget>[
-    ShopPage(),
-    CartPage(),
+    SportsPage(),
+    ClothPage(),
   ];
 
   void _onItemTapped(int index) {
@@ -137,12 +137,13 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavigationBar(
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.shop),
-            label: 'Shop',
+            icon: Icon(Icons.sports_volleyball),
+            label: 'Shoes',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart),
-            label: 'Cart',
+            icon: Icon(Icons.checkroom),
+
+            label: 'Cloths',
           ),
         ],
         currentIndex: _selectedIndex,
